@@ -1,0 +1,262 @@
+/*
+	Breakpoints
+		- sm = 540px
+		- md = 720px
+		- lg = 960px
+		- xl = 1140px
+*/
+
+
+
+
+/***********************************************
+
+HERO IMAGE - Intro Slide
+
+************************************************/
+
+.trijacks {
+ background-image:url(../images/TriJacks/trijacksposter_bike.jpg);
+ width:100%;
+ height:100vh;
+ margin: 0;
+ padding: 0;
+ background-attachment:fixed;
+ background-position:center;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+/***********************************************
+
+PAGE SECTION 1- About Me and Intrests
+
+************************************************/
+
+
+/********* Tablets *********/
+
+.center__image {
+	width: 100%;
+	padding-bottom: 110px;
+	padding-top: 50px;
+}
+
+
+.left__third {
+  background-position:center;
+  width: 30%;
+  float: left;
+  margin: 10px;
+  flex-direction: column;
+
+}
+
+.middle__third {
+  background-position:center;
+  width: 30%;
+  float: left;
+  flex-direction: column;
+ 
+}
+
+.right__third {
+	background-position:center;
+	width: 30%;
+	margin: 10px;
+	float: left;
+	flex-direction: column;
+	
+}
+
+.left__third img {
+	box-shadow: 5px 5px 3px #b9b6b6;
+}
+.middle__third img {
+	box-shadow: 5px 5px 3px #b9b6b6;
+}
+.right__third img {
+	box-shadow: 5px 5px 3px #b9b6b6;
+}
+
+@media all and (max-width:695px) {
+	.left__third {
+		float: none;
+		width: 100%;
+		margin: 0;
+		padding-top: 20px;
+	}
+	
+	.middle__third {
+		float: none;
+		width: 100%;
+		margin: 0;
+		padding-top: 20px;
+	}
+	
+	.right__third {
+		float: none;
+		width: 100%;
+		margin: 0;
+		padding-top: 20px;
+	}
+
+}
+
+
+/***********************************************
+
+DIVS - Portfolio Columns
+
+************************************************/
+
+
+.portfolio__col__left {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  float: left;
+  overflow:hidden;
+}
+
+.portfolio__col__right {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  float:left;
+  overflow:hidden;
+  padding-left: 40px;
+}
+
+/***********************************************
+
+RESUME DETAILS - date, title, project
+
+************************************************/
+
+
+.portfolio__list li {
+	list-style-type: none;
+	text-transform:uppercase;
+	color: #f0b530;
+	font-weight:bold;
+	padding-top: 20px;
+	font-size: 1.2rem;
+	font-family: 'Oswald', sans-serif;
+	border-bottom: 1px solid #A8A4A4;
+}
+
+@media all and (max-width:695px) {
+	.portfolio__list li {
+		font-size: 1rem;
+	}
+}
+
+
+/*************************/
+
+
+
+/********* Tablets *********/
+
+@media all and (max-width:980px) {
+
+.portfolio__list li {
+	display:inline-block;
+	width: 47%;
+}
+
+.portfolio__list li:nth-child(even){
+	margin-left: 3%;
+}
+}
+
+/********* Phones *********/
+
+@media all and (max-width:695px) {
+	.portfolio__list li {
+		display:inline-block;
+		width: 100%;
+	}
+
+	.portfolio__list li:nth-child(even){
+	margin-left: 0;
+	}
+
+}
+
+
+/*
+.portfolio__section {
+	padding-left: 11px;
+}
+*/
+
+
+
+.list__left__col {
+	float: left;
+	width: 50%;
+	padding-left: 10px;
+}
+
+.list__right__col {
+	float: right;
+	width: 50%;
+}
+
+
+/********* Tablets *********/
+
+@media all and (max-width:980px) {
+
+.portfolio__col__left {
+  margin:auto;
+  width: 100%;
+  float: none;
+  overflow:hidden;
+}
+
+.portfolio__col__right {
+  margin: auto;
+  width: 100%;
+  float:none;
+  overflow:hidden;
+  padding-left: 0px;
+}
+}
+
+/********* Tablets *********/
+
+.bottom__nav {
+ width: 100vw;
+ padding-top: 30vh;
+}
+
+.nav__left__col {
+	width: 50%;
+	height:30vh;
+	float: left;
+	background-image: url(../images/ridea_banner.jpg);
+}
+
+.nav__right__col {
+	background-color: #D97A7C;
+	width: 50%;
+	height:30vh;
+	float: right;
+
+}
+
+
+.bottom__nav-wrapper {
+	width: 100%;
+}
+
+
+/***********************************************
+
+END OF CSS
+
+************************************************/

@@ -1,0 +1,126 @@
+.slide {
+  height: 100vh;
+  width: 100vw;
+  border: 30px solid #f0b530;
+  overflow: hidden;;
+  background-image:url(../images/img_4566.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.slide__content {
+  width: 50%;
+  background-color: #ffffff;
+  float: right;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+		
+	
+}
+
+.slide__width {
+	width: 80%;
+	padding-left: 10%;
+	
+}
+
+.slide__title{
+	text-transform:uppercase;
+	color: #f0b530;
+	font-size: 7rem;
+	font-family: 'Oswald', sans-serif;
+	margin: 0;
+	line-height: 6.5rem;	
+}
+
+.slid__button {
+	background-color: #ffffff;
+	outline: 2px solid #f0b530;
+	text-decoration: none;
+	border: none;
+	color: #f0b530;
+	font-size: 1rem;
+	text-transform: uppercase;
+	padding: 10px;
+	letter-spacing: .01rem;
+	font-family: 'Oswald', sans-serif;
+}
+
+.slide__copy {
+	font-size: 1.5rem;
+	color: #A8A4A4;
+	padding-top: 0px;
+	padding-bottom: 20px;
+	line-height: 2rem;
+}
+
+
+/********* Tablets ********/
+
+@media all and (max-width:980px) {
+
+.slide {
+	border: 20px solid #f0b530;
+	
+}
+
+.slide__copy {
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	color: #A8A4A4;
+	padding-top: 0px;
+	padding-bottom: 20px;
+}
+
+}
+
+/********* Phones ********/
+
+@media all and (max-width:695px) {
+	.border { border: 10px solid #f0b530; 
+}
+	
+.slide__content {
+  width: 100%;
+  background-color: #ffffff;
+  float: right;
+  height: 50vh;
+  padding: 1rem;
+  text-align: center;
+}
+
+.slide__title {
+	font-size: 5rem;
+	text-align: center;
+	
+}
+
+.slide__copy {
+	font-size: .9rem;
+	line-height: 1.5rem;
+	color: #A8A4A4;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}	
+	
+.slide {
+  height: 100vh;
+  width: 100vw;
+  border: 10px solid #f0b530;
+  overflow: hidden;;
+  background-image:url(../images/img_4566.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.slide__width {
+	width: 100%;
+	padding: 0;
+}
+.slid__button {
+	width: 100%;
+}
+	
+}

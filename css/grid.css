@@ -1,0 +1,18 @@
+
+.row {
+  display: flex;
+}
+.align-center {
+  align-items:center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+
+@media all and (max-width:695px) {
+	.row {
+		display: block;
+	}
+}

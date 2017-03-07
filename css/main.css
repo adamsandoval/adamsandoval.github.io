@@ -1,0 +1,717 @@
+/*
+	Breakpoints
+		- sm = 540px
+		- md = 720px
+		- lg = 960px
+		- xl = 1140px
+*/
+
+.logo {
+height: 100px;
+width: 100px;
+background-color:#1a1a1a;
+left: 0;
+top: 0;
+position:fixed;
+z-index: 1;
+
+}
+
+@media all and (max-width:980px) {
+.logo {
+	height:80px;
+	width: 80px;
+}
+}
+
+@media all and (max-width:695px) {
+.logo {
+	height:60px;
+	width: 60px;
+}
+}
+
+/***********************************************
+
+MENU
+
+************************************************/
+
+.menu {
+	width: 50%;
+	min-height: 100%;
+	background-color:#1a1a1a;
+	right: 0;
+	top: 0;
+	position:fixed;
+	z-index: 1;
+	padding-left: 10%;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+@media all and (max-width:695px) {
+	.menu {
+		width: 100%;
+		padding-left: 20%;
+	}
+}
+
+.menu__item {
+	text-decoration: none;
+	color: #FFFFFF;
+	list-style-type: none;
+	font-size: 2.5rem;
+	padding-top: .8rem;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: .1rem;
+}
+
+
+
+.menu__list {
+	text-decoration: none;
+	color: #FFFFFF;
+	list-style: none;
+	list-style-type: none;
+	padding: 0;
+	margin-left: 0;
+}
+
+.portfolio__item {
+	font-size: 1.3rem;
+	padding-bottom: .8rem;
+}
+
+.menu__item a:hover {
+	color: #f0b530;
+}
+
+
+.menu__item a {
+	color: #ffffff;
+	text-decoration: none;
+	font-weight:bold;
+	text-transform: uppercase;
+
+}
+
+.menu__hamburger{
+	height: 100px;
+	width: 100px;
+	background-color:#1a1a1a;
+	right: 0;
+	top: 0;
+	position:fixed;
+	z-index: 1000;
+	outline: 0;
+	border: none;
+	color: #ffffff;
+}
+
+
+.menu__hamburger:active {
+	background-color: #ffffff;
+}
+
+@media all and (max-width:980px) {
+.menu__hamburger {
+	height:80px;
+	width: 80px;
+}
+}
+
+@media all and (max-width:695px) {
+.menu__hamburger {
+	height:60px;
+	width: 60px;
+}
+}
+
+
+.menu__sub-list > a {
+	color: gray;
+}
+
+
+
+/***********************************************
+
+HERO IMAGE - Intro Slide
+
+************************************************/
+
+.hero__img{
+ background-image:url(../images/img_4566.jpg);
+ width:100%;
+ height:100vh;
+ margin: 0;
+ padding: 0;
+ background-attachment:fixed;
+ background-position:center;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ position: relative;
+}
+
+
+/***********************************************
+
+PAGE SECTION 1- About Me and Intrests
+
+************************************************/
+
+.top__page__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width:1500px;
+  padding-bottom: 200px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+/********* Tablets *********/
+
+@media all and (max-width:980px) {
+
+.top__page__wrapper {
+  margin: 0 auto 0;
+  width:80%;
+  padding-bottom: 100px;
+  padding-left: 0px;
+  padding-right: 0px;
+
+}
+
+}
+
+@media all and (max-width:695px) {
+
+.top__page__wrapper {
+	margin: 0 auto 0;
+	width:75%;
+	}
+
+}
+
+/***********************************************
+
+PAGE SECTION 2- Resume
+
+************************************************/
+
+
+.bottom__page__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width:1500px;
+  padding-left: 80px;
+  padding-right: 80px;
+  clear:both;
+  position: relative;
+  padding-top: 120px;
+
+}
+
+/********* Tablets *********/
+
+@media all and (max-width:980px) {
+
+.bottom__page__wrapper {
+  margin: 0 auto 0;
+  width:80%;
+  padding-bottom: 100px;
+  padding-left: 0px;
+  padding-right: 0px;
+
+}
+
+}
+
+@media all and (max-width:695px) {
+
+	.bottom__page__wrapper {
+	  margin: 0 auto 0;
+	  width:82%;
+	  padding-bottom: 50px;
+	}
+
+}
+
+/***********************************************
+
+DIVS - Resume Columns
+
+************************************************/
+
+
+.resume__col__left {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  float: left;
+  overflow:hidden;
+}
+
+.resume__col__right {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  float:left;
+  overflow:hidden;
+  padding-left: 40px;
+}
+
+/********* Tablets *********/
+
+@media all and (max-width:980px) {
+
+.resume__col__left {
+  margin:auto;
+  width: 100%;
+  float: none;
+  overflow:hidden;
+}
+
+.resume__col__right {
+  margin: auto;
+  width: 100%;
+  float:none;
+  overflow:hidden;
+  padding-left: 0px;
+}
+}
+
+/***********************************************
+
+RESUME DETAILS - date, title, project
+
+************************************************/
+
+.page__title {
+	text-transform:uppercase;
+	color: #f0b530;
+	font-size: 7rem;
+	font-family: 'Oswald', sans-serif;
+	margin-bottom: 0px;
+	line-height: 6.2rem;
+	padding-top: 30px;
+	
+}
+
+.page__title--resume {
+	position: absolute;
+	top: -85px;
+	margin-top: 0;
+}
+
+
+@media all and (max-width:695px) {
+	.page__title--resume {
+		top: -72px;
+	}
+}
+
+
+/********* Phones *********/
+
+@media all and (max-width:695px) {
+	.page__title {
+		font-size: 5rem;
+		text-align: center;
+		line-height: 95%
+	}
+}
+/*************************/
+
+.resume__date {
+	float: left;
+	width: 35%;
+	height: 75px;
+}
+
+@media all and (max-width:695px) {
+	.resume__date {
+		float: none;
+		height: 0px;
+		padding-top: 0px;
+		width: 100%;
+	}
+	
+	.resume__row {
+		padding-top: 20px;
+	}
+	
+	h2 {
+		padding-top: 0;
+		margin-top: 0;
+	}
+}
+
+.inline__header {
+	display: inline-block;
+	color:#AEAAAA;
+	font-size: .8rem;
+	border: none;
+	padding-right: 40px;
+	padding-left: 5px;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 0px;
+	width: 35%;
+}
+
+
+.resume__list li {
+	list-style-type: none;
+	text-transform:uppercase;
+	color: #f0b530;
+	font-weight:bold;
+	padding-top: 20px;
+	font-size: 1.2rem;
+	font-family: 'Oswald', sans-serif;
+	border-bottom: 1px solid #A8A4A4;
+}
+
+/********* Phones *********/
+
+@media all and (max-width:695px) {
+	.resume__list li {
+		font-size: 1rem;
+	}
+}
+
+
+/*************************/
+
+
+
+/********* Tablets *********/
+
+@media all and (max-width:980px) {
+
+.resume__list li {
+	display:inline-block;
+	width: 47%;
+}
+
+.resume__list li:nth-child(even){
+margin-left: 3%;
+}
+}
+
+/********* Phones *********/
+
+@media all and (max-width:695px) {
+	.resume__list li {
+		display:inline-block;
+		width: 100%;
+	}
+
+	.resume__list li:nth-child(even){
+	margin-left: 0;
+	}
+
+}
+
+
+
+/***********************************************
+
+FOOTER
+
+************************************************/
+.footer {
+	background-color:#f0b530;
+	height: 80px;
+	margin: 0;
+	
+}
+
+.footer__content {
+	max-width: 1500px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 80px;
+	padding-right: 80px;
+	padding-top: 20px;
+}
+
+.footer__col {
+	width: 33%;
+	float: left;
+	margin: 0;
+	padding: 0;
+	padding-top: 12px;
+}
+
+.social {
+	text-align: right;
+}
+
+.social img {
+	padding-left: 15px;
+}
+
+.email {
+	text-align: center;
+}
+
+
+@media all and (max-width:980px) {
+	
+	.footer {
+		height: 170px;
+	}
+	
+	.footer__col {
+		float: none;
+		width: 100%;
+		text-align: center;
+		padding-bottom: 12px;
+	}
+	
+	.footer__content {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	
+}
+
+
+/***********************************************
+
+COLORs
+
+************************************************/
+
+.grey-color {
+	color: grey;
+}
+
+.bg-grey {
+	background-color:#f2f2f2;
+	clear: both;
+}
+
+
+/***********************************************
+
+GEN TYOGRAPHY STYLING
+
+************************************************/
+
+.border {
+margin-left: auto;
+margin-right: auto;
+max-width:100%;
+border: 30px solid #f0b530;
+overflow: hidden;
+border-bottom: none;
+bottom: 0;
+}
+
+
+/********* Tablets ********/
+
+@media all and (max-width:980px) {
+
+.border {
+	border: 20px solid #f0b530;
+	border-bottom: none;
+}
+}
+
+/********* Phones ********/
+
+@media all and (max-width:695px) {
+	.border { border: 10px solid #f0b530; 
+			  border-bottom: none;
+	}
+}
+
+
+.hidden{
+	display: none;
+}
+
+
+.education {
+	padding-bottom: 100px;
+}
+
+/********* Tablets ********/
+
+@media all and (max-width:980px) {
+	.education {
+		padding-bottom: 0px;
+}
+}
+
+/************************/
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+h2 {
+	font-family: 'Overpass Mono', monospace;
+	text-transform:capitalize;
+	padding-top: 40px;
+	border-bottom: black 1px solid;
+}
+
+h3 {
+	text-transform:uppercase;
+	color: #f0b530;
+	padding-top: 12px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	font-size: 1.2rem;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 1px;
+	border-bottom: 1px solid #A8A4A4;
+  }
+
+
+h4 {
+	text-transform:capitalize;
+	margin-top: 0px;
+	font-size: .75em;
+	font-family: 'Overpass Mono', monospace;
+  }
+
+.footer__col h4 {
+	
+	margin-bottom: 0;
+}
+
+
+h5{
+	text-transform: uppercase;
+	color:#A8A4A4;
+	font-family: 'Montserrat', sans-serif;
+	font-size: .8rem;
+	margin-bottom: 0;
+}
+
+
+p {
+  padding-top:65px;
+  font-size: .8rem;
+  line-height: 1.8rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+
+.contact-info {
+	color:#ffffff;
+	display: inline-block;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: .8rem;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+}
+
+
+.vertical-type {
+transform: rotate(90deg);
+}
+
+.scroll-title {
+	position: absolute;
+	bottom: 8rem;
+	right: 0;
+}
+
+
+.portfolio__copy__dark {
+	padding-top: 10px;
+}
+
+@media all and (max-width:695px) {
+p {
+	font-size: .7rem;
+	line-height: 1.1rem;
+}
+
+h3 {
+	font-size: 1rem;
+	padding-top: 0px;
+}
+}
+
+ul, menu, dir  {
+	padding-left: 0px;
+}
+
+span{
+	color:#AEAAAA;
+	font-size: .8rem;
+	border: none;
+	padding-right: 40px;
+	padding-left: 5px;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 0px;
+}
+
+
+
+.clearfix:after, .resume__row
+ {
+    content:"";
+    display:block;
+    clear:both;
+}
+
+
+/***************************************
+		IMAGES
+***************************************/
+
+.fullwidth__image {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.fullwidth__image img {
+	width: 100%;
+}
+
+.img-responsive {
+	max-width: 100%;
+	display: block;
+	margin: auto;
+}
+
+.logo-img {
+	padding-bottom: 150px;
+}
+
+
+/***********************************************
+
+Pager
+
+************************************************/
+
+.nav--prev svg {
+	transform: rotate(180deg);
+}
+
+/***********************************************
+
+END OF CSS
+
+************************************************/
