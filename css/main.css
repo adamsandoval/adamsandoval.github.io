@@ -312,6 +312,9 @@ RESUME DETAILS - date, title, project
 @media all and (max-width:695px) {
 	.page__title--resume {
 		top: -72px;
+		font-size: 4rem;
+		text-align: center;
+		line-height: 3.7rem;
 	}
 }
 
@@ -320,9 +323,9 @@ RESUME DETAILS - date, title, project
 
 @media all and (max-width:695px) {
 	.page__title {
-		font-size: 5rem;
+		font-size: 4rem;
 		text-align: center;
-		line-height: 95%
+		line-height: 3.7rem;
 	}
 }
 /*************************/
