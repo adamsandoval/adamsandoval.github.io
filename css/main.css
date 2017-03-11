@@ -785,13 +785,13 @@ span{
 .website__info_text {
 	
 	margin: 0;
-	font-size: .3rem;
+	font-size: .5rem;
 	text-align: center;
 	color:#ffffff;
 	font-family: 'Overpass Mono', monospace;
 	padding-left: 10px;
 	padding-right: 10px;
-	padding-top: 0;
+	padding-top: 2px;
 	padding-bottom: 0;
 }
 
