@@ -572,6 +572,37 @@ FOOTER
 	
 }
 
+/***************************************
+		website info
+***************************************/
+
+.website__info {
+	height: 30px;
+	background-color: #1a1a1a;
+}
+
+.website__info_text {
+	
+	margin: 0;
+	font-size: .5rem;
+	text-align: center;
+	color:#ffffff;
+	font-family: 'Overpass Mono', monospace;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 2px;
+	padding-bottom: 0;
+}
+
+.website__info  a {
+	text-decoration: none;
+	color: #f0b530;
+	border-bottom: 1px solid;
+}
+
+.website__info a:hover {
+	color: #ffffff;
+}
 
 /***********************************************
 
@@ -712,11 +743,18 @@ p {
 	letter-spacing: .1rem;
 }
 
+
+/***********************************
+
+		BOTTOM NAV
+
+************************************/
 .nav--prev{
 	color: white;
 	text-transform: uppercase;
 	text-align: left;
-	padding-left: 80px;	
+	font-family: 'Oswald', sans-serif;
+	font-size: 4rem;
 }
 
 .nav--next{
@@ -724,17 +762,50 @@ p {
 	text-transform: uppercase;
 	text-align: right;
 	padding-right: 80px;	
+	font-family: 'Oswald', sans-serif;
 }
 
+.prev-aarow  {
+	height: 4rem;
+	width: 4rem;
+	transform: rotate(180deg);
+	float: left;
+	margin-right: 30px;
+	margin-top: 17px;
+}
+
+.bottom__nav-content {
+	padding-left: 80px;
+	padding-top: 45vh;
+	
+
+}
+
+.nav--prev-wrapper {
+
+}
+
+@media all and (max-width:695px) {
+	.nav--prev {
+		display: none;
+	}
+	
+	.bottom__nav-content {
+		padding-top:20vh;
+		padding-left: 25%;
+		
+	}
+
+}
+
+
+
+/*
 .vertical-type {
 transform: rotate(90deg);
 }
+*/
 
-.scroll-title {
-	position: absolute;
-	bottom: 8rem;
-	right: 0;
-}
 
 
 .portfolio__copy__dark {
@@ -774,26 +845,6 @@ span{
     display:block;
     clear:both;
 }
-/***************************************
-		website info
-***************************************/
-.website__info {
-	height: 30px;
-	background-color: #1a1a1a;
-}
-
-.website__info_text {
-	
-	margin: 0;
-	font-size: .5rem;
-	text-align: center;
-	color:#ffffff;
-	font-family: 'Overpass Mono', monospace;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 2px;
-	padding-bottom: 0;
-}
 
 
 /***************************************
@@ -830,9 +881,7 @@ Pager
 
 ************************************************/
 
-.nav--prev svg {
-	transform: rotate(180deg);
-}
+
 
 /***********************************************
 

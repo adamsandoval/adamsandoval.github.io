@@ -229,22 +229,31 @@ RESUME DETAILS - date, title, project
 
 .nav__left__col {
 	width: 50%;
-	height:35vh;
+	height:95vh;
 	float: left;
 	background-image:url(../images/img_4566.jpg);
 	background-size: cover;
 	background-position: center;
+	
 }
 
 .nav__right__col {
 	width: 50%;
-	height:35vh;
-	background-image:url(../images/ridea_banner.jpg);
+	height:95vh;
+	background-image:url(../images/ridea/mockuuups-iphone6.jpg);
 	background-size: cover;
 	background-position: center;
 	float: right;
 }
 
+@media all and (max-width:695px) {
+	.nav__left__col {
+		height: 50vh;
+	}
+	.nav__right__col {
+		height: 50vh;
+	}
+}
 
 .bottom__nav-wrapper {
 	width: 100%;
