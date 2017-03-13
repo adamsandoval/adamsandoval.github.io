@@ -798,15 +798,20 @@ p {
 }
 
 @media all and (max-width:695px) {
-	.nav--prev {
+	.nav--prev, .nav--next {
 		display: none;
 	}
 	
 	.bottom__nav-content {
 		padding-top:20vh;
 		padding-left: 25%;
-		right:0;
+	
 		
+	}
+	
+	.bottom__nav-content-right {
+		padding-top:20vh;
+		padding-right: 25%;
 	}
 
 }
