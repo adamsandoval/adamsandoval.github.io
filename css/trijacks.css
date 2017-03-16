@@ -15,10 +15,13 @@ HERO IMAGE - Intro Slide
  margin: 0;
  padding: 0;
  background-attachment:fixed;
+ background-repeat: no-repeat;
+ background-size: cover;
  background-position:center;
  display: flex;
  flex-direction: column;
  align-items: center;
+
 }
 
 /***********************************************
@@ -180,14 +183,6 @@ RESUME DETAILS - date, title, project
 }
 
 
-/*
-.portfolio__section {
-	padding-left: 11px;
-}
-*/
-
-
-
 .list__left__col {
 	float: left;
 	width: 50%;
@@ -227,7 +222,7 @@ RESUME DETAILS - date, title, project
  padding-top: 30vh;
 }
 
-.nav__left__col {
+.bottom-nav__left__col {
 	width: 50%;
 	height:95vh;
 	float: left;
@@ -237,27 +232,26 @@ RESUME DETAILS - date, title, project
 	
 }
 
-.nav__right__col {
+.bottom-nav__right__col {
 	width: 50%;
 	height:95vh;
-	background-image:url(../images/ridea/mockuuups-iphone6.jpg);
+	background-image:url(../images/ridea/ridea-iphone6.jpg);
 	background-size: cover;
 	background-position: center;
 	float: right;
 }
 
 @media all and (max-width:695px) {
-	.nav__left__col {
+	
+	.bottom-nav__left__col {
 		height: 50vh;
 	}
-	.nav__right__col {
+	.bottom-nav__right__col {
 		height: 50vh;
 	}
 }
 
-.bottom__nav-wrapper {
-	width: 100%;
-}
+
 
 
 /***********************************************
