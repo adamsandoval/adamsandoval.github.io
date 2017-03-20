@@ -13,7 +13,7 @@ background-color:#1a1a1a;
 left: 0;
 top: 0;
 position:fixed;
-z-index: 1;
+z-index: 10;
 
 }
 .logo svg {
@@ -55,7 +55,7 @@ MENU
 	right: 0;
 	top: 0;
 	position:fixed;
-	z-index: 1;
+	z-index: 10;
 	padding-left: 10%;
 	display: flex;
     flex-direction: column;
@@ -606,39 +606,37 @@ COLORS
 
 /***********************************************
 
-BORDER
+Main Content
 
 ************************************************/
 
-.border {
-margin-left: auto;
-margin-right: auto;
-max-width:100%;
-border: 30px solid #f0b530;
-overflow: hidden;
-border-bottom: none;
-bottom: 0;
+.main-content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width:100%;
+  border-left: 30px solid #f0b530;
+  border-right: 30px solid #f0b530;
+  overflow: hidden;
 }
 
 
 /********* Tablets ********/
 
 @media all and (max-width:980px) {
-
-.border {
-	border: 20px solid #f0b530;
-	border-bottom: none;
-}
+  .main-content {
+  	border-left: 20px solid #f0b530;
+  border-right: 20px solid #f0b530;
+  }
 }
 
 /********* Phones ********/
 
 @media all and (max-width:695px) {
-	.border { border: 10px solid #f0b530; 
-			  border-bottom: none;
+	.main-content { 
+    border-left: 10px solid #f0b530;
+    border-right: 10px solid #f0b530;
 	}
 }
-
 
 
 /********* Tablets ********/

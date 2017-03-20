@@ -1,17 +1,50 @@
-.slide {
+.slides {
+  position: relative;
   height: 100vh;
-  width: 100vw;
   border: 30px solid #f0b530;
-  overflow: hidden;;
+  overflow: hidden;
+  border-bottom: none;
+  padding-bottom: 30px;
+}
+
+.slide__bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  border: none;
+  border-bottom: 30px solid #f0b530;
+  z-index: 10;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
   background-image:url(../images/img_4566.jpg);
   background-size:cover;
   background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+}
+
+.slide--active {
+  right: 0 !important;
+  z-index: auto !important;
+}
+
+.slide--preview {
+  z-index: 5 !important;
+}
+
+.slide:not(.slide--active) {
+  right: -100%;
 }
 
 .slide__content {
   width: 50%;
   background-color: #ffffff;
-  float: right;
+  position: absolute;
+  right: 0;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -59,9 +92,13 @@
 
 @media all and (max-width:980px) {
 
-.slide {
+.slides {
 	border: 20px solid #f0b530;
-	
+  border-bottom: none;
+}
+
+.slide__bar {
+  border-bottom-width: 20px;
 }
 
 .slide__copy {
@@ -77,13 +114,18 @@
 /********* Phones ********/
 
 @media all and (max-width:695px) {
-	.border { border: 10px solid #f0b530; 
+.slides { 
+  border: 10px solid #f0b530; 
+  border-bottom: none;
+}
+
+.slide__bar {
+  border-bottom-width: 10px;
 }
 	
 .slide__content {
   width: 100%;
   background-color: #ffffff;
-  float: none;
   height: 60vh;
   padding: 1rem;
   text-align: center;
@@ -111,18 +153,6 @@
 	padding-bottom: 10px;
 }	
 	
-.slide {
-  height: 100vh;
-  width: 100vw;
-  border: 10px solid #f0b530;
-  overflow: hidden;;
-  background-image:url(../images/img_4566.jpg);
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-position: center;
-
-}
-
 .slide__width {
 	width: 100%;
 	padding: 0;
