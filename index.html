@@ -49,44 +49,99 @@
 
   	<nav class="menu hidden">
       <div class="menu__list-container">
-        <ul class="menu__list">
-    		<li class="menu__item">  <a href="index.html">About</a></li>
-     	  <li class="menu__item menu__sub-list">
-    			 <a href="#"> Porfolio </a>
-      		<ul class="menu__list">
-    			  <li class="menu__item portfolio__item"> <a href="trijacks/index.html">Trijacks</a></li>
-    			  <li class="menu__item portfolio__item"> <a href="#">Liquis Design</a></li>
-    			  <li class="menu__item portfolio__item"> <a href="#">DevYes</a></li>
-    			  <li class="menu__item portfolio__item"> <a href="#">Oranje</a></li>
-    			  <li class="menu__item portfolio__item"> <a href="#">Ridea</a></li>
-    			  <li class="menu__item portfolio__item"> <a href="#">MedEdNow</a></li>
-    			  <li class="menu__item portfolio__item"> <a href="#">Outdoor Products</a></li>
-    			  <li class="menu__item portfolio__item"> <a href="#">logos & marks</a></li>
-    			</ul>
-    		</li>
-          <li class="menu__item"> <a href="#">  Contact </a> </li>
-        </ul>
+          <ul class="menu__list">
+              <li class="menu__item">
+                  <a class="active" href="index.html" data-slide-id="1">About</a>
+              </li>
+              <li class="menu__item menu__sub-list">
+                  <a href="#" data-slide-id="2"> Porfolio </a>
+                  <ul class="menu__list">
+                      <li class="menu__item portfolio__item"> 
+                        <a href="trijacks/index.html" data-slide-id="3">Trijacks</a>
+                      </li>
+                      <li class="menu__item portfolio__item"> 
+                        <a href="#" data-slide-id="4">Liquis Design</a>
+                      </li>
+                      <li class="menu__item portfolio__item"> 
+                        <a href="#" data-slide-id="5">DevYes</a>
+                      </li>
+                      <li class="menu__item portfolio__item"> 
+                        <a href="#" data-slide-id="6">Oranje</a>
+                      </li>
+                      <li class="menu__item portfolio__item"> 
+                        <a href="#" data-slide-id="7">Ridea</a>
+                      </li>
+                      <li class="menu__item portfolio__item"> 
+                        <a href="#" data-slide-id="8">MedEdNow</a>
+                      </li>
+                      <li class="menu__item portfolio__item"> 
+                        <a href="#" data-slide-id="9">Outdoor Products</a>
+                      </li>
+                      <li class="menu__item portfolio__item"> 
+                        <a href="#" data-slide-id="10">logos & marks</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="menu__item"> <a href="#">  Contact </a> </li>
+          </ul>
       </div>
-  	</nav>
+  </nav>
 
-    <div class="slides">
-      <section class="slide" data-slide="1">
-        <div class="slide__hidden"></div>
-        <div class="slide__content">
-        	<div class="slide__width">
-          			<h1 class="slide__title">About me</h1>
-					<p class="slide__copy"> Hello there, my name is Adam Sandoval. 
-									I am a graphic designer and illustrator based in Phoenix Arizona. 
-									I have a passion for design, doughnuts, and doing good. 
-					</p>
-          		<button class="slid__button" type="button">Learn More</button>
-        	</div>
-        	
-		</div>
-      </section>
-  	</div>
 
-	<div class="border">
+  <section class="slides">
+    <div class="slide" data-slide="1" data-slide-bg="images/img_4566.jpg">
+      <div class="slide__hidden"></div>
+      <div class="slide__content">
+      	<div class="slide__width">
+    			<h1 class="slide__title">About me</h1>  
+				  <p class="slide__copy"> Hello there, my name is Adam Sandoval. I am a graphic designer and illustrator based in Phoenix Arizona. I have a passion for design, doughnuts, and doing good. </p>
+      		<a href="./index.html" class="slid__button">Learn More</a>
+      	</div>
+	    </div>
+    </div>
+    <!-- end slide 1 -->
+
+    <div class="slide" data-slide="3" data-slide-bg="images/trijacks/trijacks_mockups_3.jpg">
+      <div class="slide__hidden"></div>
+      <div class="slide__content">
+        <div class="slide__width">
+          <h1 class="slide__title">Trijacks</h1>  
+          <p class="slide__copy"> Hello there, my name is Adam Sandoval. I am a graphic designer and illustrator based in Phoenix Arizona. I have a passion for design, doughnuts, and doing good. </p>
+          <a href="./trijacks/index.html" class="slid__button">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <!-- end slide 2 -->
+    
+    <div class="slide" data-slide="4" data-slide-bg="http://unsplash.it/1200/800">
+      <div class="slide__hidden"></div>
+      <div class="slide__content">
+        <div class="slide__width">
+          <h1 class="slide__title">Liquis Design</h1>  
+          <p class="slide__copy"> Hello there, my name is Adam Sandoval. I am a graphic designer and illustrator based in Phoenix Arizona. I have a passion for design, doughnuts, and doing good. </p>
+          <a href="./trijacks/index.html" class="slid__button"">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <!-- end slide 3 -->
+
+    <div class="slide" data-slide="5" data-slide-bg="http://unsplash.it/1200/800?random">
+      <div class="slide__hidden"></div>
+      <div class="slide__content">
+        <div class="slide__width">
+          <h1 class="slide__title">DevYes</h1>  
+          <p class="slide__copy"> Hello there, my name is Adam Sandoval. I am a graphic designer and illustrator based in Phoenix Arizona. I have a passion for design, doughnuts, and doing good. </p>
+          <a href="./trijacks/index.html" class="slid__button"">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <!-- end slide 4 -->
+
+    <hr class="slide__bar">
+	</section>
+  <!-- end slides -->
+
+	<main class="main-content">
 <!--		 <div class="hero__img"><h3 class="vertical-type scroll-title"> Scroll Down </h3></div>-->
 		 <div class="top__page__wrapper clearfix">
 			<h1 class="page__title">Who is this guy?</h1>
@@ -289,13 +344,16 @@
        			</div>		
        		</div>
        </div>
-	</div>
+	</main>
 	<div class="website__info clearfix">
 		<p class="website__info_text"> Website designed & developed by Adam Sandoval & <a href="https://www.linkedin.com/in/jeremypeter/"> Jeremy Peter </a></p>
 	</div>
-<script src="js/vendor/jquery-3.1.1.min.js"></script>
-<script src="js/vendor/modernizr-2.8.3.min.js"></script>
-<script src="js/main.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/ScrollToPlugin.min.js"></script>
+  <script src="js/vendor/jquery-3.1.1.min.js"></script>
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="js/slides.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 

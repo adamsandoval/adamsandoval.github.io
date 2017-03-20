@@ -1,14 +1,11 @@
-$(document).ready(function(){
-	$('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
-		$(this).toggleClass('open');
-	});
-});
-
-
 (function($){
 
   var menuBtn = $('.menu__hamburger');
   var menu = $('.menu');
+
+  $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+    $(this).toggleClass('open');
+  });
 
 
   menuBtn.on('click', function(){
@@ -23,21 +20,5 @@ $(document).ready(function(){
 
   });
 
-
-  $('.menu a[data-image]').on('mouseover', function(){
-
-    var data = $(this).attr('data-image');
-    var slide = $('.slide');
-    
-    slide.css({
-      backgroundImage: 'url(' + data+ ')'
-    });
-
-    $(this).on('mouseleave', function(){
-      slide.css({ backgroundImage: ''});
-    });
-
-  });
-
-})(jQuery)
+})(jQuery);
 // Immedietally Invoked Function Expression
