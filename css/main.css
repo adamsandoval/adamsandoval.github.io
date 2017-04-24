@@ -6,6 +6,10 @@
 		- xl = 1140px
 */
 
+.no-scroll {
+  overflow-y: hidden;
+}
+
 .logo {
 height: 100px;
 width: 100px;

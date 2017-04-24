@@ -1,5 +1,9 @@
 (function($, window){
 
+  var slidesTimeline;
+
+  $('body').addClass('no-scroll');
+
   addBackgroundImages();
 
   $(document).on('mouseenter focus', '.menu a[data-slide-id]', handleMenuItemsSlides);
@@ -19,12 +23,19 @@
 
     // Create timeline 
     var timeline = new TimelineMax({ paused: true });
-    timeline.to(slide, .5, { right: 0, zIndex: 5});
+    var timeline2 = new TimelineMax({paused: true});
+    // timeline2.fromTo('.slides', .5, {right: '-100%'}, {right: 0});
+    timeline2.set('.slides', {'opacity': 1, display: 'block'}); 
+    timeline2.play();
+
+    // timeline.set('.slides', {className: '-=slides--relative'}); 
+    timeline.to('.slide__bar', .2, {right: 0});
+    timeline.to(slide, .4, { right: 0, zIndex: 5});
     timeline.play();
 
     // Reverse the timeline when user leaves focus/hover
     $(this).on('mouseleave focusout', function reverseTimeline(){
-      timeline.timeScale(1).reverse();
+      timeline.timeScale(2).reverse();
     });
   }
 
@@ -41,10 +52,11 @@
     
     // Create Timeline
     var timeline = new TimelineMax({ paused: true });
+    timeline.set(window, {scrollTo: 0});
     timeline.to(slides, .5, { right: '-100%'});
     timeline.to('.menu', .3, {opacity: 0});
     timeline.to('.menu', 0, {className: '+=hidden', opacity: 1});
-    timeline.play();
+    timeline.play();  
 
   }
 
@@ -69,9 +81,14 @@
         window.location = evt.target.href;
       } else {
         tl.to('.slide__bar', .5,{right: '-100%'});
-        tl.to(window, 1, {scrollTo: Math.abs($(window).height()/2)});
+        // tl.set('.slides', {className: '+=slides--relative'}); 
+        tl.set('.slides', {'opacity': 0, display: 'none'}); 
+        tl.set('.slide--active', {className: '-=slide--active'});
+        tl.set(slideContent, {right: 0});
+        tl.set('body', {className: '-=no-scroll'});
+        tl.to(window, .5, {scrollTo: Math.abs($(window).height()/2)});        
       }
-    })
+    });
     tl.play();
   }
 
@@ -85,7 +102,12 @@
     var slideId         = getSlideIdFromActiveMenuItem();
     var slides          = $('.slides').find('.slide');
     var activeSlide     = slides.filter('.slide[data-slide="' + slideId + '"]');
+    var slideCurrentBg  = $('.slide__current-bg');
     var slide;
+
+    slideCurrentBg.css({
+      backgroundImage: 'url(' + activeSlide.attr('data-slide-bg') + ')'
+    });
 
     activeSlide.addClass('slide--active');
 

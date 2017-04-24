@@ -1,5 +1,8 @@
 (function($){
 
+  //Please note, the DOM should be ready
+  // Barba.Pjax.start();
+
   var menuBtn = $('.menu__hamburger');
   var menu = $('.menu');
 
