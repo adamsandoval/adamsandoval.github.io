@@ -6,13 +6,34 @@
 		- xl = 1140px
 */
 
+.no-scroll {
+  overflow-y: hidden;
+}
+
+.main-header--fixed {
+    position: fixed;
+  z-index: 10;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.headroom {
+  transition: transform .25s ease-in-out;
+  will-change: transform;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
 .logo {
 height: 100px;
 width: 100px;
 background-color:#1a1a1a;
-left: 0;
-top: 0;
-position:fixed;
+position: relative;
 z-index: 10;
 
 }
@@ -114,7 +135,7 @@ MENU
 	background-color:#1a1a1a;
 	right: 0;
 	top: 0;
-	position:fixed;
+	position:absolute;
 	z-index: 1000;
 	outline: 0;
 	border: none;
