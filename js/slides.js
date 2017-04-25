@@ -10,7 +10,7 @@
 
   $(document).on('click', '.menu a[data-slide-id]', handleClickedMenuItem);
 
-  $(document).on('click', '.slides .slid__button', handleClickedSlideButton);
+  $(document).on('click', '.slides .slide__button', handleClickedSlideButton);
 
   /****************************************
     Event Handlers
@@ -70,7 +70,7 @@
 
     evt.preventDefault();
 
-    var slideBtn = $('.slid__button');
+    var slideBtn = $('.slide__button');
     var slideContent = $(this).closest('.slide__content');
 
     // Create Timeline

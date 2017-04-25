@@ -71,7 +71,7 @@
 	line-height: 6.5rem;	
 }
 
-.slid__button {
+.slide__button {
 	background-color: #ffffff;
 	outline: 2px solid #f0b530;
 	text-decoration: none;
@@ -169,7 +169,7 @@
   	width: 100%;
   	padding: 0;
   }
-  .slid__button {
+  .slide__button {
   	width: 100%;
   }
 }
