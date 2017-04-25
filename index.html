@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -42,14 +42,14 @@
   </header>
   <!-- /header -->
 
-  <nav class="menu hidden" aria-label="main-nav">
+  <nav class="menu hidden" aria-label="main-nav" role="navigation">
     <div class="menu__list-container">
       <ul class="menu__list">
         <li class="menu__item">
           <a class="active" href="index.html" data-slide-id="1">About</a>
         </li>
         <li class="menu__item menu__sub-list">
-          <a href="#" data-slide-id="2"> Porfolio </a>
+          <a href="./example/index.html" data-slide-id="2"> Porfolio </a>
           <ul class="menu__list">
             <li class="menu__item portfolio__item">
               <a href="trijacks/index.html" data-slide-id="3">Trijacks</a>
@@ -84,6 +84,18 @@
 
   <section class="slides">
     <div class="slide" data-slide="1" data-slide-bg="images/img_4566.jpg">
+      <div class="slide__hidden"></div>
+      <div class="slide__content">
+        <div class="slide__width">
+          <h1 class="slide__title">About me</h1>
+          <p class="slide__copy"> Hello there, my name is Adam Sandoval. I am a graphic designer and illustrator based in Phoenix Arizona. I have a passion for design, doughnuts, and doing good. </p>
+          <a href="./index.html" class="slid__button">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <!-- end slide 1 -->
+
+    <div class="slide" data-slide="2" data-slide-bg="images/trijacks/trijacks_mockups_3.jpg">
       <div class="slide__hidden"></div>
       <div class="slide__content">
         <div class="slide__width">
@@ -136,243 +148,253 @@
   </section>
   <!-- end slides -->
   <div class="slide__current-bg"></div>
-  <main class="main-content">
-
-    <!--     <div class="hero__img"><h3 class="vertical-type scroll-title"> Scroll Down </h3></div>-->
-    <div class="top__page__wrapper clearfix">
-      <h1 class="page__title">Who is this guy?</h1>
-      <div class="resume__col__left">
-        <p class="body__copy__dark"> Hello, My name is Adam Sandoval and I am a Graphic and Web designer based in Phonix Arizona. I was I graduated from Northern Arizona University in May of 2015 with a degree in Visual Communications with a dual emphasis in graphic design and interactive design. I like my type san-serif, I have a tendency to use lots of muted colors, I use Gotham too often, I prefer my paragraphs left-justified, and like my logos clean. My dream job is to be a tour guide at Jurassic Park but until that becomes a reality I just want to design. In all seriousness I want to help people in whatever job that I may end up in; be it through design work delivered or relationships built. I think design is a way to look at and solve problems and not just laying things out or crafting a logo. I want people to see my passion come through my design work. I don't just want to design - I want to educate, solve a problem, and have a call to action. I think that I can help people this way and hope to do so. I am open to any job in the design world but my preferred field is in logos and branding. I am sure that will change over the years but right now I am just excited to see what is out there and continue to learn.
-          <br> I love to create anything from hand-drawn type, to handmade books, and pretty much everything in between. When I am not designing in front of a computer I am riding my bike, running, camping, or baking. I really enjoy being outside and experiencing nature I think it gives me balance to sitting inside and designing for hours on end. I also love America, my family, and Jesus.
-        </p>
-      </div>
-
-      <div class="resume__col__right">
-
-        <div class="resume__section my-intrests">
-          <h2> Quick Hits </h2>
-          <ul class="resume__list">
-            <li>
-              <h3 class="inline__header"> 01 </h3>Christian </li>
-            <li>
-              <h3 class="inline__header"> 02 </h3>Cyclist </li>
-            <li>
-              <h3 class="inline__header"> 03 </h3>Baker</li>
-            <li>
-              <h3 class="inline__header"> 04 </h3>4 broken bones </li>
-            <li>
-              <h3 class="inline__header"> 05 </h3>Runner</li>
-            <li>
-              <h3 class="inline__header"> 06 </h3>Coffee Drinker</li>
-            <li>
-              <h3 class="inline__header"> 07 </h3>Awkward</li>
-            <li>
-              <h3 class="inline__header"> 08 </h3>House plant killer</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="wrapper bg-grey clearfix">
-      <div class="bottom__page__wrapper">
-        <h1 class="page__title page__title--resume">résumé</h1>
+  <main class="main-content" role="main">
+    <div id="barba-wrapper">
+      <div class="barba-container">
+        <div class="top__page__wrapper clearfix">
+        <h1 class="page__title">Who is this guy?</h1>
         <div class="resume__col__left">
-          <div class="resume__section work-experience">
-            <h2> Work Experience </h2>
-            <div class="resume__row">
-              <div class="resume__date">
-                <h5> Feb 2016 - present </h5>
-              </div>
-              <div class="resume__title__descriptor">
-                <h3> Liquis design </h3>
-                <h4> Graphic Designer </h4>
-              </div>
-            </div>
-            <div class="resume__row">
-              <div class="resume__date">
-                <h5> Feb 2016 - Nov 2016 </h5>
-              </div>
-              <div class="resume__title__descriptor">
-                <h3> State Bicycle Company </h3>
-                <h4> Graphic Designer </h4>
-              </div>
-            </div>
-            <div class="resume__row">
-              <div class="resume__date">
-                <h5> Feb 2016 - present </h5>
-              </div>
-              <div class="resume__title__descriptor">
-                <h3> MM Brand Agency </h3>
-                <h4> Jr. Designer </h4>
-              </div>
-            </div>
-            <div class="resume__row">
-              <div class="resume__date">
-                <h5> Feb 2013 - Nov 2013 </h5>
-              </div>
-              <div class="resume__title__descriptor">
-                <h3> Northern Arizona Healthcare </h3>
-                <h4> Graphic Design Intern </h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="resume__section freelance-work">
-            <h2> Freelance Work </h2>
-            <div class="resume__row">
-              <div class="resume__date">
-                <h5> Nov 2016 - Present </h5>
-              </div>
-              <div class="resume__title__descriptor">
-                <h3> State Bicycle Company </h3>
-                <h4> Graphic Designer </h4>
-              </div>
-            </div>
-            <div class="resume__row">
-              <div class="resume__date">
-                <h5> May 2016 - Present </h5>
-              </div>
-              <div class="resume__title__descriptor">
-                <h3> Dev Yes </h3>
-                <h4> Logo, Website, Branding </h4>
-              </div>
-            </div>
-            <div class="resume__row">
-              <div class="resume__date">
-                <h5> Sep 2016 </h5>
-              </div>
-              <div class="resume__title__descriptor">
-                <h3> Eddible exelence </h3>
-                <h4> Logo, Website, Branding </h4>
-              </div>
-            </div>
-            <div class="resume__row">
-              <div class="resume__date">
-                <h5> Nov 2016 </h5>
-              </div>
-              <div class="resume__title__descriptor">
-                <h3> Roley Fitness </h3>
-                <h4> Logo Design </h4>
-              </div>
-            </div>
-            <div class="resume__row">
-              <div class="resume__date">
-                <h5> June 2015 </h5>
-              </div>
-              <div class="resume__title__descriptor">
-                <h3> dutton healthcare consulting </h3>
-                <h4> Logo Design </h4>
-              </div>
-            </div>
-            <div class="resume__row">
-              <div class="resume__date">
-                <h5> May 2015 </h5>
-              </div>
-              <div class="resume__title__descriptor">
-                <h3> Carepoint Technonogies </h3>
-                <h4> Logo Design </h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="resume__section pro-bono">
-            <h2> Pro Bono Work </h2>
-            <div class="resume__row">
-              <div class="resume__date">
-                <h5> Aug 2016 </h5>
-              </div>
-              <div class="resume__title__descriptor">
-                <h3> Support our schools AZ </h3>
-                <h4> Logo Design </h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="resume__section education">
-            <h2> Education </h2>
-            <div class="resume__row">
-              <div class="resume__date">
-                <h5> Aug 2011- may 2015 </h5>
-              </div>
-              <div class="resume__title__descriptor">
-                <h3> NORThern arizona university </h3>
-                <h4> Bachlor In Fine Arts </h4>
-              </div>
-            </div>
-          </div>
+          <p class="body__copy__dark"> Hello, My name is Adam Sandoval and I am a Graphic and Web designer based in Phonix Arizona. I was I graduated from Northern Arizona University in May of 2015 with a degree in Visual Communications with a dual emphasis in graphic design and interactive design. I like my type san-serif, I have a tendency to use lots of muted colors, I use Gotham too often, I prefer my paragraphs left-justified, and like my logos clean. My dream job is to be a tour guide at Jurassic Park but until that becomes a reality I just want to design. In all seriousness I want to help people in whatever job that I may end up in; be it through design work delivered or relationships built. I think design is a way to look at and solve problems and not just laying things out or crafting a logo. I want people to see my passion come through my design work. I don't just want to design - I want to educate, solve a problem, and have a call to action. I think that I can help people this way and hope to do so. I am open to any job in the design world but my preferred field is in logos and branding. I am sure that will change over the years but right now I am just excited to see what is out there and continue to learn.
+            <br> I love to create anything from hand-drawn type, to handmade books, and pretty much everything in between. When I am not designing in front of a computer I am riding my bike, running, camping, or baking. I really enjoy being outside and experiencing nature I think it gives me balance to sitting inside and designing for hours on end. I also love America, my family, and Jesus.
+          </p>
         </div>
 
         <div class="resume__col__right">
-          <div class="resume__section disciplines">
-            <h2> Diciplines </h2>
+
+          <div class="resume__section my-intrests">
+            <h2> Quick Hits </h2>
             <ul class="resume__list">
               <li>
-                <h5 class="inline__header"> 01 </h5> Graphic Design </li>
+                <h3 class="inline__header"> 01 </h3>Christian </li>
               <li>
-                <h5 class="inline__header"> 02 </h5> Logo Design </li>
+                <h3 class="inline__header"> 02 </h3>Cyclist </li>
               <li>
-                <h5 class="inline__header"> 03 </h5> Branding </li>
+                <h3 class="inline__header"> 03 </h3>Baker</li>
               <li>
-                <h5 class="inline__header"> 04 </h5> Interactive Design </li>
+                <h3 class="inline__header"> 04 </h3>4 broken bones </li>
               <li>
-                <h5 class="inline__header"> 05 </h5> UI/UX </li>
+                <h3 class="inline__header"> 05 </h3>Runner</li>
               <li>
-                <h5 class="inline__header"> 06 </h5> Illustration </li>
+                <h3 class="inline__header"> 06 </h3>Coffee Drinker</li>
               <li>
-                <h5 class="inline__header"> 07 </h5> Web Design </li>
+                <h3 class="inline__header"> 07 </h3>Awkward</li>
               <li>
-                <h5 class="inline__header"> 08 </h5> App Design </li>
+                <h3 class="inline__header"> 08 </h3>House plant killer</li>
             </ul>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper bg-grey clearfix">
+        <div class="bottom__page__wrapper">
+          <h1 class="page__title page__title--resume">résumé</h1>
+          <div class="resume__col__left">
+            <div class="resume__section work-experience">
+              <h2> Work Experience </h2>
+              <div class="resume__row">
+                <div class="resume__date">
+                  <h5> Feb 2016 - present </h5>
+                </div>
+                <div class="resume__title__descriptor">
+                  <h3> Liquis design </h3>
+                  <h4> Graphic Designer </h4>
+                </div>
+              </div>
+              <div class="resume__row">
+                <div class="resume__date">
+                  <h5> Feb 2016 - Nov 2016 </h5>
+                </div>
+                <div class="resume__title__descriptor">
+                  <h3> State Bicycle Company </h3>
+                  <h4> Graphic Designer </h4>
+                </div>
+              </div>
+              <div class="resume__row">
+                <div class="resume__date">
+                  <h5> Feb 2016 - present </h5>
+                </div>
+                <div class="resume__title__descriptor">
+                  <h3> MM Brand Agency </h3>
+                  <h4> Jr. Designer </h4>
+                </div>
+              </div>
+              <div class="resume__row">
+                <div class="resume__date">
+                  <h5> Feb 2013 - Nov 2013 </h5>
+                </div>
+                <div class="resume__title__descriptor">
+                  <h3> Northern Arizona Healthcare </h3>
+                  <h4> Graphic Design Intern </h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="resume__section freelance-work">
+              <h2> Freelance Work </h2>
+              <div class="resume__row">
+                <div class="resume__date">
+                  <h5> Nov 2016 - Present </h5>
+                </div>
+                <div class="resume__title__descriptor">
+                  <h3> State Bicycle Company </h3>
+                  <h4> Graphic Designer </h4>
+                </div>
+              </div>
+              <div class="resume__row">
+                <div class="resume__date">
+                  <h5> May 2016 - Present </h5>
+                </div>
+                <div class="resume__title__descriptor">
+                  <h3> Dev Yes </h3>
+                  <h4> Logo, Website, Branding </h4>
+                </div>
+              </div>
+              <div class="resume__row">
+                <div class="resume__date">
+                  <h5> Sep 2016 </h5>
+                </div>
+                <div class="resume__title__descriptor">
+                  <h3> Eddible exelence </h3>
+                  <h4> Logo, Website, Branding </h4>
+                </div>
+              </div>
+              <div class="resume__row">
+                <div class="resume__date">
+                  <h5> Nov 2016 </h5>
+                </div>
+                <div class="resume__title__descriptor">
+                  <h3> Roley Fitness </h3>
+                  <h4> Logo Design </h4>
+                </div>
+              </div>
+              <div class="resume__row">
+                <div class="resume__date">
+                  <h5> June 2015 </h5>
+                </div>
+                <div class="resume__title__descriptor">
+                  <h3> dutton healthcare consulting </h3>
+                  <h4> Logo Design </h4>
+                </div>
+              </div>
+              <div class="resume__row">
+                <div class="resume__date">
+                  <h5> May 2015 </h5>
+                </div>
+                <div class="resume__title__descriptor">
+                  <h3> Carepoint Technonogies </h3>
+                  <h4> Logo Design </h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="resume__section pro-bono">
+              <h2> Pro Bono Work </h2>
+              <div class="resume__row">
+                <div class="resume__date">
+                  <h5> Aug 2016 </h5>
+                </div>
+                <div class="resume__title__descriptor">
+                  <h3> Support our schools AZ </h3>
+                  <h4> Logo Design </h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="resume__section education">
+              <h2> Education </h2>
+              <div class="resume__row">
+                <div class="resume__date">
+                  <h5> Aug 2011- may 2015 </h5>
+                </div>
+                <div class="resume__title__descriptor">
+                  <h3> NORThern arizona university </h3>
+                  <h4> Bachlor In Fine Arts </h4>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="resume__section skills">
-            <h2 class="test"> Skills </h2>
-            <ul class="resume__list">
-              <li>
-                <h5 class="inline__header"> 01 </h5> Adobe Illustrator </li>
-              <li>
-                <h5 class="inline__header"> 02 </h5> Adobe Photoshop </li>
-              <li>
-                <h5 class="inline__header"> 03 </h5> Adobe Photoshop </li>
-              <li>
-                <h5 class="inline__header"> 04 </h5> Adobe Dreamweaver </li>
-              <li>
-                <h5 class="inline__header"> 05 </h5> HTML5 </li>
-              <li>
-                <h5 class="inline__header"> 06 </h5> CSS3 </li>
-              <li>
-                <h5 class="inline__header"> 07 </h5> Java Script </li>
-              <li>
-                <h5 class="inline__header"> 08 </h5> Invision App </li>
-            </ul>
+          <div class="resume__col__right">
+            <div class="resume__section disciplines">
+              <h2> Diciplines </h2>
+              <ul class="resume__list">
+                <li>
+                  <h5 class="inline__header"> 01 </h5> Graphic Design </li>
+                <li>
+                  <h5 class="inline__header"> 02 </h5> Logo Design </li>
+                <li>
+                  <h5 class="inline__header"> 03 </h5> Branding </li>
+                <li>
+                  <h5 class="inline__header"> 04 </h5> Interactive Design </li>
+                <li>
+                  <h5 class="inline__header"> 05 </h5> UI/UX </li>
+                <li>
+                  <h5 class="inline__header"> 06 </h5> Illustration </li>
+                <li>
+                  <h5 class="inline__header"> 07 </h5> Web Design </li>
+                <li>
+                  <h5 class="inline__header"> 08 </h5> App Design </li>
+              </ul>
+            </div>
+
+            <div class="resume__section skills">
+              <h2 class="test"> Skills </h2>
+              <ul class="resume__list">
+                <li>
+                  <h5 class="inline__header"> 01 </h5> Adobe Illustrator </li>
+                <li>
+                  <h5 class="inline__header"> 02 </h5> Adobe Photoshop </li>
+                <li>
+                  <h5 class="inline__header"> 03 </h5> Adobe Photoshop </li>
+                <li>
+                  <h5 class="inline__header"> 04 </h5> Adobe Dreamweaver </li>
+                <li>
+                  <h5 class="inline__header"> 05 </h5> HTML5 </li>
+                <li>
+                  <h5 class="inline__header"> 06 </h5> CSS3 </li>
+                <li>
+                  <h5 class="inline__header"> 07 </h5> Java Script </li>
+                <li>
+                  <h5 class="inline__header"> 08 </h5> Invision App </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="footer bg-gold clearfix">
-      <div class="footer__content">
-        <div class="footer__col">
-          <h4 class="contact-info phone"> 928.451.4940</h4>
+      <div class="footer bg-gold clearfix">
+        <div class="footer__content">
+          <div class="footer__col">
+            <h4 class="contact-info phone"> 928.451.4940</h4>
+          </div>
+          <div class="footer__col email">
+            <h4 class="contact-info email"> hello@adamcreated.com</h4>
+          </div>
+          <div class="footer__col social">
+            <a href="https://preprod.instagram.com/designwithadam/" target="_blank">
+              <img class="social-icons instrgram" src="images/instagram-logo.svg" height="25" width="auto" alt="instagram logo"> </a>
+            <a href="https://www.linkedin.com/in/adam-sandoval-6a670494/">
+              <img class="social-icons linkedin" src="images/linkin-logo.svg" height="25" width="auto" alt="linkedin logo" target="_blank"> </a>
+            <a href="https://dribbble.com/AdamSandoval" target="_blank">
+              <img class="social-icons dribbble" src="images/dribbble-ball.svg" height="25" width="auto" alt="dribbble logo"> </a>
+            <a href="https://github.com/adamsandoval" target="_blank">
+              <img class="social-icons github" src="images/github-mark.svg" height="25" width="auto" alt="github logo"> </a>
+          </div>
+         </div>
         </div>
-        <div class="footer__col email">
-          <h4 class="contact-info email"> hello@adamcreated.com</h4>
-        </div>
-        <div class="footer__col social">
-          <a href="https://preprod.instagram.com/designwithadam/" target="_blank">
-            <img class="social-icons instrgram" src="images/instagram-logo.svg" height="25" width="auto" alt="instagram logo"> </a>
-          <a href="https://www.linkedin.com/in/adam-sandoval-6a670494/">
-            <img class="social-icons linkedin" src="images/linkin-logo.svg" height="25" width="auto" alt="linkedin logo" target="_blank"> </a>
-          <a href="https://dribbble.com/AdamSandoval" target="_blank">
-            <img class="social-icons dribbble" src="images/dribbble-ball.svg" height="25" width="auto" alt="dribbble logo"> </a>
-          <a href="https://github.com/adamsandoval" target="_blank">
-            <img class="social-icons github" src="images/github-mark.svg" height="25" width="auto" alt="github logo"> </a>
-        </div>
+
       </div>
+      <!-- end barba container -->
+
     </div>
+    <!-- end barba wrapper -->
+
   </main>
-  <div class="website__info clearfix">
-    <p class="website__info_text"> Website designed & developed by Adam Sandoval & <a href="https://www.linkedin.com/in/jeremypeter/"> Jeremy Peter </a></p>
-  </div>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
+
+  <footer aria-label="footer">
+    <div class="website__info clearfix">
+      <p class="website__info_text"> Website designed & developed by Adam Sandoval & <a href="https://www.linkedin.com/in/jeremypeter/"> Jeremy Peter </a></p>
+    </div>
+  </footer>
+  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script> -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/ScrollToPlugin.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/headroom/0.9.3/headroom.min.js"></script>
